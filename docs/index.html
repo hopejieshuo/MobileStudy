@@ -2,8 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>化学网站中心</title>
+        <title>学习网站导航</title>
         <script>
+            //Add meta tag dynamically.
+            var metaElement=document.createElement("meta");
+            var metaText=document.createAttribute("name");
+            metaText.value="viewport";
+            metaElement.setAttributeNode(metaText);
+            var metaText2=document.createAttribute("content");
+            metaText2.value="user-scalable=no";
+            metaElement.setAttributeNode(metaText2);
+            document.head.appendChild(metaElement);
+
+            //Load this page again if it hasn't "index.html".
             if(document.location.href.indexOf("index.html")==-1){
                 window.location.href=document.location.href+"index.html";
             }
@@ -22,15 +33,36 @@
                 text-decoration: none;
                 color:#5555FF;
             }
-            .endpage{
+            .title,.endpage{
                 background-color:#111111;
                 color:#FFFFFF;
+                text-align:center;
             }
         </style>
+        <link rel="shortcut icon" href="index.png"></link>
     </head>
     <body style="background-color:#333333;">
-        <h1 style="text-align:center;color:#FFFFFF;">化学网站中心</h1><br>
-        <table border="1" style="width:100%;height:100px;text-align:left;">
+        <h1 style="text-align:center;color:#FFFFFF;">学习网站导航<br>Study Website Navigation</h1><br>
+
+        <table border="1" style="width:100%;text-align:left;">
+            <tr>
+                <td class="title" colspan="2">
+                    <h2>语文</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="address">
+                    <h2><a class="link" href="https://www.gushiwen.cn/">古诗文网</a></h2>
+                <td class="address"></td>
+            </tr>
+        </table><br><br>
+
+        <table border="1" style="width:100%;text-align:left;">
+            <tr>
+                <td class="title" colspan="2">
+                    <h2>化学</h2>
+                </td>
+            </tr>
             <tr>
                 <td class="address">
                     <h2><a class="link" href="https://www.chemsrc.com/">化源网&nbsp;专业化工搜索引擎</a></h2>
@@ -39,16 +71,9 @@
                     <h2><a class="link" href="https://www.chembk.com/cn">化工百科</a></h2>
                 </td>
             </tr>
-            <tr>
-                <td class="address">
-                    <h2>敬请期待</h2>
-                </td>
-                <td class="address">
-                    <h2>敬请期待</h2>
-                </td>
-            </tr>
         </table><br><br>
-        <table style="width:100%;height:50px;text-align:center;">
+
+        <table style="width:100%;height:50px;">
             <tr>
                 <td class="endpage">京ICP备&nbsp;备你妈的案</td>
             </tr>
