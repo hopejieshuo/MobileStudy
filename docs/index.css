@@ -1,0 +1,21 @@
+.address{
+    background-color:#111111;
+    color:#FFFFFF;
+    width:50%
+}
+
+.link{
+    text-decoration: none;
+    color:#5555FF;
+}
+
+.link:visited{
+    text-decoration: none;
+    color:#5555FF;
+}
+
+.title,.endpage{
+    background-color:#111111;
+    color:#FFFFFF;
+    text-align:center;
+}
