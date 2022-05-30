@@ -21,7 +21,7 @@ function stateChange(){
         document.getElementById("stateText").innerHTML="切换为工具";
     }else{
         document.getElementById("website").style.display="none";
-        document.getElementById("tools").style.display=;
+        document.getElementById("tools").style.display="";
         document.getElementById("stateText").innerHTML="切换为网站";
     }
 }
