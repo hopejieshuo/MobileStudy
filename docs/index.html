@@ -9,75 +9,129 @@
     <body style="background-color:#333333;">
         <h1 style="text-align:center;color:#FFFFFF;">学习网站导航<br>Study Website Navigation</h1><br>
 
-        <table border="1" style="width:100%;text-align:left;">
-            <tr>
-                <td class="title" colspan="2">
-                    <h2>语文</h2>
-                </td>
-            </tr>
-            <tr>
-                <td class="address">
-                    <h2><a class="link" href="https://www.gushiwen.cn/">古诗文网</a></h2>
-                </td>
-                <td class="address">
-                    <h2><a class="link" href="https://new.shuge.org/">书格</a></h2>
-                </td>
-            </tr>
-            <tr>
-                <td class="address">
-                    <h2><a class="link" href="https://shuxiangjia.cn/">书享家</a></h2>
-                </td>
-                <td class="address">
-                    <h2><a class="link" href="https://www.zdic.net/">汉典</a></h2>
-                </td>
-            </tr>
-        </table><br><br>
+        <button id="stateChange" onclick="stateChange();"><h2 id="stateText">切换为工具</h2></button><br><br>
 
-        <table border="1" style="width:100%;text-align:left;">
-            <tr>
-                <td class="title" colspan="2">
-                    <h2>英语</h2>
-                </td>
-            </tr>
-            <tr>
-                <td class="address">
-                    <h2><a class="link" href="https://dict.eudic.net/">欧路词典</a></h2>
-                </td>
-                <td class="address link">
-                    <h2><a class="link" href="https://fanyi.baidu.com/">百度翻译</a>&nbsp;&nbsp;(<a class="link" href="https://fanyi.baidu.com/#zh/en">中译英</a>)&nbsp;&nbsp;(<a class="link" href="https://fanyi.baidu.com/#en/zh">英译中</a>)</h2>
-                </td>
-            </tr>
-        </table><br><br>
-
-        <table border="1" style="width:100%;text-align:left;">
-            <tr>
-                <td class="title" colspan="2">
-                    <h2>化学</h2>
-                </td>
-            </tr>
-            <tr>
-                <td class="address">
-                    <h2><a class="link" href="https://www.chemsrc.com/">化源网&nbsp;专业化工搜索引擎</a></h2>
-                </td>
-                <td class="address">
-                    <h2><a class="link" href="https://www.chembk.com/cn">化工百科</a></h2>
-                </td>
-            </tr>
-        </table><br><br>
-
-        <table border="1" style="width:100%;text-align:left;">
-            <tr>
-                <td class="title" colspan="2">
-                    <h2>历史</h2>
-                </td>
-            </tr>
-            <tr>
-                <td class="address">
-                    <h2><a class="link" href="https://www.allhistory.com/">全历史</a></h2>
-                </td>
-                <td class="address"></td>
-            </tr>
-        </table><br><br>
+        <div id="website" style="display:;">
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>语文</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="address">
+                        <h2><a class="link" href="https://www.gushiwen.cn/">古诗文网</a></h2>
+                    </td>
+                    <td class="address">
+                        <h2><a class="link" href="https://new.shuge.org/">书格</a></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="address">
+                        <h2><a class="link" href="https://shuxiangjia.cn/">书享家</a></h2>
+                    </td>
+                    <td class="address">
+                        <h2><a class="link" href="https://www.zdic.net/">汉典</a></h2>
+                    </td>
+                </tr>
+            </table><br><br>
+    
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>数学</h2>
+                    </td>
+                </tr>
+            </table><br><br>
+    
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>英语</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="address">
+                        <h2><a class="link" href="https://dict.eudic.net/">欧路词典</a></h2>
+                    </td>
+                    <td class="address link">
+                        <h2><a class="link" href="https://fanyi.baidu.com/">百度翻译</a>&nbsp;&nbsp;(<a class="link" href="https://fanyi.baidu.com/#zh/en">中译英</a>)&nbsp;&nbsp;(<a class="link" href="https://fanyi.baidu.com/#en/zh">英译中</a>)</h2>
+                    </td>
+                </tr>
+            </table><br><br>
+    
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>生物</h2>
+                    </td>
+                </tr>
+            </table><br><br>
+    
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>地理</h2>
+                    </td>
+                </tr>
+            </table><br><br>
+    
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>物理</h2>
+                    </td>
+                </tr>
+            </table><br><br>
+    
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>化学</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="address">
+                        <h2><a class="link" href="https://www.chemsrc.com/">化源网&nbsp;专业化工搜索引擎</a></h2>
+                    </td>
+                    <td class="address">
+                        <h2><a class="link" href="https://www.chembk.com/cn">化工百科</a></h2>
+                    </td>
+                </tr>
+            </table><br><br>
+    
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>历史</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="address">
+                        <h2><a class="link" href="https://www.allhistory.com/">全历史</a></h2>
+                    </td>
+                    <td class="address"></td>
+                </tr>
+            </table><br><br>
+    
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="title" colspan="2">
+                        <h2>政治</h2>
+                    </td>
+                </tr>
+            </table><br><br>
+        </div>
+        
+        <div id="website" style="display:;">
+            <table border="1" style="width:100%;text-align:left;">
+                <tr>
+                    <td class="address">
+                        <h2 style="text-align:center;">工具正在来的路上，尽请期待......</h2>
+                    </td>
+                </tr>
+            </table><br><br>
+        </div>
 
         <table style="width:100%;height:50px;">
             <tr>

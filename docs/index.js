@@ -12,3 +12,14 @@ document.head.appendChild(metaElement);
 if(document.location.href.indexOf("index.html")==-1){
 window.location.href=document.location.href+"index.html";
 }
+
+//switch between two states,use with a button called "stateChange"
+function stateChange(){
+    if(document.getElementById("website").style.display=="none"){
+        document.getElementById("website").style.display="";
+        document.getElementById("stateText").innerHTML="切换为工具";
+    }else{
+        document.getElementById("website").style.display="none";
+        document.getElementById("stateText").innerHTML="切换为网站";
+    }
+}
