@@ -1,0 +1,17 @@
+#a{
+    height:50px;
+    width:500px;
+    font-size:40px;
+    outline:none;
+}
+
+table,tr{
+    width:100%;
+}
+
+td{
+    width:50%;
+    font-size:30px;
+}
+
+th{font-size:50px;}

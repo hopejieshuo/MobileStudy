@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>正多边形属性计算</title>
+        <script src="index.js"></script>
+        <script>
+            function btn(){
+                var result=sideChange(document.getElementById('a').value);
+                document.getElementById('side').innerHTML=result.side;
+                document.getElementById('IA').innerHTML=result.IA;
+                document.getElementById('SIA').innerHTML=result.SIA;
+                document.getElementById('EA').innerHTML=result.EA;
+                document.getElementById('SEA').innerHTML=result.SEA;
+                document.getElementById('NDL').innerHTML=result.NDL
+                document.getElementById('SDL').innerHTML=result.SDL;
+                document.getElementById('CA').innerHTML=result.CA;
+            }
+            function clean(){
+                document.getElementById('a').value="";
+                document.getElementById('side').innerHTML="";
+                document.getElementById('IA').innerHTML="";
+                document.getElementById('SIA').innerHTML="";
+                document.getElementById('EA').innerHTML="";
+                document.getElementById('SEA').innerHTML="";
+                document.getElementById('NDL').innerHTML=""
+                document.getElementById('SDL').innerHTML="";
+                document.getElementById('CA').innerHTML="";
+            }
+        </script>
+        <link rel="stylesheet" href="index.css"></link>
+    </head>
+    <body style="background-color:#333333;color:#FFFFFF;font-size:30px;">
+        <h1 style="text-align:center;">正多边形属性计算</h1>
+        
+        <div>
+            边数为:<input type="number" id="a"></input><br><br>
+            <button onclick="javascript:btn();" style="font-size:30px;">开始转换</button>
+            <button onclick="javascript:clean();" style="font-size:30px;">清空</button><br><br>
+            
+            <table border="1">
+                <tr><th colspan="2">计算结果</th></tr>
+                <tr>
+                    <td>边数</td>
+                    <td id="side"></td>
+                </tr>
+                <tr>
+                    <td>内角</td>
+                    <td id="IA"></td>
+                </tr>
+                <tr>
+                    <td>内角和</td>
+                    <td id="SIA"></td>
+                </tr>
+                <tr>
+                    <td>外角</td>
+                    <td id="EA"></td>
+                </tr>
+                <tr>
+                    <td>外角和</td>
+                    <td id="SEA"></td>
+                </tr>
+                <tr>
+                    <td>对角线个数</td>
+                    <td id="NDL"></td>
+                </tr>
+                <tr>
+                    <td>对角线总数</td>
+                    <td id="SDL"></td>
+                </tr>
+                <tr>
+                    <td>中心角度</td>
+                    <td id="CA"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
